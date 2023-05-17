@@ -1,0 +1,121 @@
+/* GENERAL */
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVBAR */
+header{
+    background-color: #2D6F4C;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.logoytxt{
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.logoytxt img{
+    margin-right: 0.5rem;
+}
+
+
+/* INDEX */
+.qsContainer{
+    text-align: center;
+}
+
+.qsContainer h2{
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+.qsContainer h3{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.txtContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.txtContainer img{
+    margin-top: 2rem;
+}
+
+/* GALERIA */
+#carouselFade{
+    margin-top: 2rem;
+}
+
+#carouselExampleFade{
+    margin-top: 2rem;
+}
+
+
+/* CONTACTO */
+form div{
+    margin-top: 30px;
+}
+
+.contactin{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #2D6F4C;
+    color: aliceblue;
+}
+
+/* FOOTER */
+footer{
+    position: absolute;
+    margin-top: 2rem;
+    bottom: 0;
+    background-color: #2D6F4C;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 6rem;
+}
+
+footer p{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.footerContainer{
+    position: relative;
+    width: 100%;
+}
