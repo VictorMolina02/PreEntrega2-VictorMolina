@@ -60,6 +60,23 @@ header{
     margin-top: 2rem;
 }
 
+/* INDEX MEDIAQUERIES */
+@media screen and (min-width:1024px){
+    .txtContainer{
+        flex-direction: row;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .txtContainer p{
+        width: 70rem;
+        margin-left: 1rem;
+    }
+    .txtContainer img{
+        width: 30rem;
+        margin-left: 2rem;
+    }
+}
+
 /* GALERIA */
 #carouselFade{
     margin-top: 2rem;
@@ -102,17 +119,20 @@ footer{
 footer p{
     margin-top: 1rem;
     font-size: 1rem;
+    text-align: center;
 }
+
 footer div{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
 }
 
 footer img{
     width: 2rem;
     height: 2rem;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .footerContainer{
