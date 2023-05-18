@@ -20,7 +20,7 @@ h2{
 header{
     background-color: #2D6F4C;
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .logoytxt{
@@ -82,6 +82,10 @@ header{
         width: 30rem;
         margin-left: 2rem;
     }
+
+    .logoytxt{
+        font-size: 1.5rem;
+    }
 }
 
 /* GALERIA */
@@ -92,6 +96,11 @@ header{
 #carouselExampleFade{
     margin-top: 2rem;
 }
+
+.titulo-galeria{
+    text-align: center;
+}
+
 
 /* COREOGRAFIAS */
 
@@ -114,6 +123,16 @@ header{
 
 .descContainer{
     margin-left: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    #periconContainer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #salonContainer{
+        display: flex;
+    }
 }
 
 /* FESTIVALES */
@@ -166,13 +185,13 @@ button{
 }
 
 
-form button{
+.buttons button{
     border-radius: 10rem;
 }
 
 .buttons{
+    display: flex;
     flex-direction: row;
-    grid-area: boton;
     margin-top: 3rem;
     justify-content: space-around;
     margin-bottom: 4rem;
@@ -185,6 +204,41 @@ form button{
 .formH1{
     text-align: center;
     margin-top: 2rem;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (min-width:1024px){
+    #formContainer{
+        display: grid;
+        grid-template-areas: 
+        "nombre fn"
+        "telefono mail"
+        "consultas consultas";
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 8rem 8rem 20rem;
+    }
+    
+    #nyaContainer{
+        grid-area: nombre;
+    }
+    
+    #telefonoContainer{
+        grid-area: telefono;
+    }
+    
+    #mailContainer{
+        grid-area: mail;
+    }
+    
+    #fechaContainer{
+        grid-area: fn;
+    }
+
+    #consultasContainer{
+        grid-area: consultas;
+    }
+
 }
 
 /* FOOTER */
