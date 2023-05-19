@@ -133,6 +133,19 @@ header{
     #salonContainer{
         display: flex;
     }
+
+    #texto-salon{
+        width: 50%;
+    }
+
+    #texto-pericon{
+        width: 50%;
+    }
+
+    .videoContainer{
+        width: 50%;
+    }
+
 }
 
 /* FESTIVALES */
@@ -158,6 +171,41 @@ header{
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+#carouselExampleFade{
+    width: 90%;
+    height: 100%;
+}
+
+/* galeria */
+.footerGaleria{
+    position: relative;
+}
+
+@media screen and (min-width:1024px){
+    #carouselFade{
+        width: 90%;
+        height: 100%;
+    }
+    
+    #carousel1{
+        grid-area: carousel1;
+    }
+    
+    #carousel2{
+        grid-area: carousel2;
+    }
+    
+    #galeriaContainer{
+        display: grid;
+        grid-template-areas:
+        "carousel1 carousel2";
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 100%;
+    }
+    footer{
+        position: absolute;
+    }
 }
 
 
