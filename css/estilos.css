@@ -15,6 +15,9 @@ h1{
 h2{
     font-family: 'Lobster', cursive;
 }
+h3{
+    font-family: 'Lobster', cursive;
+}
 
 /* NAVBAR */
 header{
@@ -67,11 +70,24 @@ header{
     margin-top: 2rem;
 }
 
+.logrosContainer{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.logrosContainer h3{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
 /* INDEX MEDIAQUERIES */
 @media screen and (min-width:1024px){
     .txtContainer{
         flex-direction: row;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-top: 2rem;
         width: 100%;
     }
@@ -86,23 +102,50 @@ header{
     }
 
     .logoytxt{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .logrosContainer{
+        font-size: 1.7rem;
+    }
+
+    .logrosContainer h3{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
     }
 }
 
-/* GALERIA */
-#carouselFade{
-    margin-top: 2rem;
-}
+@media screen and (min-width:768px){
+    .txtContainer{
+        flex-direction: row;
+        font-size: 1.7rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .txtContainer p{
+        width: 70rem;
+        margin-left: 1rem;
+        width: 100%;
+    }
+    .txtContainer img{
+        width: 30rem;
+        margin-left: 2rem;
+    }
 
-#carouselExampleFade{
-    margin-top: 2rem;
-}
+    .logoytxt{
+        font-size: 2rem;
+    }
+    .logrosContainer{
+        font-size: 1.7rem;
+    }
 
-.titulo-galeria{
-    text-align: center;
+    .logrosContainer h3{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+    
 }
-
 
 /* COREOGRAFIAS */
 
@@ -127,28 +170,64 @@ header{
     margin-left: 1rem;
 }
 
+/* MEDIAQUERIES COREOGRAFIAS */
 @media screen and (min-width:1024px){
     #periconContainer{
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 2rem;
     }
     #salonContainer{
         display: flex;
+        margin-top: 2rem;
     }
 
     #texto-salon{
         width: 50%;
+        font-size: 1.9rem;
     }
 
     #texto-pericon{
         width: 50%;
+        font-size: 1.9rem;
     }
 
     .videoContainer{
         width: 50%;
+
     }
 
+    #texto-salon h2{
+        font-size: 2.5rem;
+    }
+
+    #texto-pericon h2{
+        font-size: 2.5rem;
+    }
+
+    .titulo-coreografias{
+        font-size: 3rem;
+    }
 }
+
+@media screen and (min-width:768px) {
+    .titulo-coreografias{
+        font-size: 2.7rem;
+    }
+    #texto-salon{
+        font-size: 2rem;
+    }
+    #texto-pericon{
+        font-size: 2rem;
+    }
+    #texto-salon h2{
+        font-size: 2.5rem;
+    }
+    #texto-pericon h2{
+        font-size: 2.5rem;
+    }
+}
+
 
 /* FESTIVALES */
 
@@ -174,22 +253,74 @@ header{
     margin-left: 1rem;
     margin-right: 1rem;
 }
-#carouselExampleFade{
-    width: 90%;
-    height: 100%;
+
+/* MEDIAQUERIES FESTIVAL */
+
+@media screen and (min-width:1024px){
+    .festivalContainer{
+        font-size: 2rem;
+    }
+    .festivalContainer h2{
+        font-size: 2.7rem;
+    }
+
+    #organizacion-festivales{
+        font-size: 3rem;
+    }
+
 }
 
-/* galeria */
+@media screen and (min-width:768px) {
+    .festivalContainer{
+        font-size: 1.9rem;
+    }
+    .festivalContainer h2{
+        font-size: 2.5rem;
+    }
+    #organizacion-festivales{
+        font-size: 2.8rem;
+    }
+}
+
+/* GALERIA */
+
 .footerGaleria{
     position: relative;
 }
 
+#carouselFade{
+    margin-top: 2rem;
+    width: 90%;
+    height: 100%;
+}
+
+#carouselExampleFade{
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.titulo-galeria{
+    text-align: center;
+}
+
+.presentacionContainer{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/* MEDIAQUERIES GALERIA */
 @media screen and (min-width:1024px){
     #carouselFade{
         width: 90%;
         height: 100%;
     }
-    
+    #carouselExampleFade{
+        width: 90%;
+        height: 100%;
+    }
     #carousel1{
         grid-area: carousel1;
     }
@@ -205,8 +336,15 @@ header{
         grid-template-columns: 49% 49%;
         grid-template-rows: 100%;
     }
-    footer{
-        position: absolute;
+    .presentacionContainer{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:768px)  {
+    .presentacionContainer{
+        font-size: 1.9rem;
     }
 }
 
@@ -256,7 +394,7 @@ button{
     margin-top: 2rem;
 }
 
-/* MEDIAQUERIES */
+/* MEDIAQUERIES CONTACTO*/
 
 @media screen and (min-width:1024px){
     #formContainer{
@@ -293,7 +431,7 @@ button{
 
 /* FOOTER */
 footer{
-    position: absolute;
+    position: relative;
     margin-top: 2rem;
     bottom: 0;
     background-color: #2D6F4C;
@@ -320,9 +458,4 @@ footer img{
     height: 2rem;
     margin-left: 2rem;
     margin-top: 1rem;
-}
-
-.footerContainer{
-    position: relative;
-    width: 100%;
 }
