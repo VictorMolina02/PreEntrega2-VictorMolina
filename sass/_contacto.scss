@@ -1,0 +1,74 @@
+form{
+    div{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        text-align: center;
+        font-weight: bold;
+        label{
+            margin-bottom: 0.9rem;
+        }
+    }
+}
+
+.formH1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.iframeContainer{
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    button{
+        border-radius: 10rem;
+    }
+}
+
+button{
+    padding: 1rem;
+    background-color: #2D6F4C;
+    color: aliceblue;
+}
+
+@media screen and (min-width:1024px){
+    #formContainer{
+        display: grid;
+        grid-template-areas: 
+        "nombre fn"
+        "telefono mail"
+        "consultas consultas";
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 8rem 8rem 20rem;
+    }
+    
+    #nyaContainer{
+        grid-area: nombre;
+    }
+    
+    #telefonoContainer{
+        grid-area: telefono;
+    }
+    
+    #mailContainer{
+        grid-area: mail;
+    }
+    
+    #fechaContainer{
+        grid-area: fn;
+    }
+
+    #consultasContainer{
+        grid-area: consultas;
+    }
+
+}

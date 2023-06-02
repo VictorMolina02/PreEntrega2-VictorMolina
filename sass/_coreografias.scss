@@ -1,0 +1,74 @@
+.titulo-coreografias{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#salonContainer{
+    margin-top: 1rem;
+}
+
+#periconContainer{
+    margin-top: 2rem;
+}
+
+.ttContainer{
+    margin-left: 1rem;
+}
+
+.descContainer{
+    margin-left: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    #periconContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+    }
+    #salonContainer{
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    #texto-salon{
+        width: 50%;
+        font-size: 1.9rem;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    #texto-pericon{
+        width: 50%;
+        font-size: 1.9rem;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    .videoContainer{
+        width: 50%;
+    }
+
+    .titulo-coreografias{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .titulo-coreografias{
+        font-size: 2.7rem;
+    }
+    #texto-salon{
+        font-size: 2rem;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+    #texto-pericon{
+        font-size: 2rem;
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+}
