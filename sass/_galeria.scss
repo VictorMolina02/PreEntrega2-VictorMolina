@@ -1,11 +1,11 @@
 #carouselFade{
     margin-top: 2rem;
-    width: 90%;
+    width: 80%;
     height: 100%;
 }
 
 #carouselExampleFade{
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin-top: 2rem;
 }
@@ -15,7 +15,7 @@
 }
 
 .presentacionContainer{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -55,4 +55,8 @@
     .presentacionContainer{
         font-size: 1.9rem;
     }
+    main{
+        overflow-y: hidden;
+    }
 }
+
