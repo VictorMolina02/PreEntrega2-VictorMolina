@@ -14,18 +14,92 @@
     h2{
         margin-left: 1rem;
     }
+    text-align: center;
 }
 
+#festival-malambo{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.txtyimgfnmContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#festival-zamba{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media screen and (min-width:1024px){
     .festivalContainer{
         font-size: 2rem;
         h2{
             font-size: 2.7rem;
+            text-align: center;
         }
     }
     #organizacion-festivales{
         font-size: 3rem;
+    }
+    #festival-zamba{
+        display: grid;
+        grid-template-areas:
+        "texto foto";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        img{
+            width: 100%;
+            height: 50rem;
+            grid-area: foto;
+        }
+        .zambaContainer{
+            grid-area: texto;
+            align-items: center;
+        }
+        text-align: center;
+        align-items: center;
+    }
+    #festival-malambo{
+        display: grid;
+        grid-template-areas:
+        "foto texto";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        img{
+            width: 100%;
+            height: 90%;
+            grid-area: foto;
+        }
+    }
+    .txtyimgfnmContainer{
+        grid-area: texto;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+
+    #noche-de-gala{
+        display: grid;
+        grid-template-areas:
+        "texto foto";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        img{
+            width: 100%;
+            height: 40rem;
+            grid-area: foto;
+        }
+        align-items: center;
+    }
+    .galaContainer{
+        grid-area: texto;
     }
 }
 

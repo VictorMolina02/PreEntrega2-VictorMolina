@@ -35,6 +35,10 @@
   margin-bottom: 1rem;
 }
 
+.imgIndex {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .txtContainer {
     flex-direction: row;
@@ -60,6 +64,11 @@
     text-align: center;
     margin-top: 2rem;
     font-size: 2.5rem;
+  }
+  .imgIndex {
+    display: initial;
+    width: 100%;
+    height: 95rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -105,9 +114,29 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  text-align: center;
 }
 .festivalContainer h2 {
   margin-left: 1rem;
+}
+
+#festival-malambo {
+  display: flex;
+  flex-direction: column;
+}
+#festival-malambo img {
+  width: 100%;
+  height: 100%;
+}
+
+.txtyimgfnmContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#festival-zamba img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -116,9 +145,58 @@
   }
   .festivalContainer h2 {
     font-size: 2.7rem;
+    text-align: center;
   }
   #organizacion-festivales {
     font-size: 3rem;
+  }
+  #festival-zamba {
+    display: grid;
+    grid-template-areas: "texto foto";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+    align-items: center;
+  }
+  #festival-zamba img {
+    width: 100%;
+    height: 50rem;
+    grid-area: foto;
+  }
+  #festival-zamba .zambaContainer {
+    grid-area: texto;
+    align-items: center;
+  }
+  #festival-malambo {
+    display: grid;
+    grid-template-areas: "foto texto";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  #festival-malambo img {
+    width: 100%;
+    height: 90%;
+    grid-area: foto;
+  }
+  .txtyimgfnmContainer {
+    grid-area: texto;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+  #noche-de-gala {
+    display: grid;
+    grid-template-areas: "texto foto";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  #noche-de-gala img {
+    width: 100%;
+    height: 40rem;
+    grid-area: foto;
+  }
+  .galaContainer {
+    grid-area: texto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -157,24 +235,12 @@
 
 @media screen and (min-width: 1024px) {
   #carouselFade {
-    width: 90%;
-    height: 100%;
+    width: 70%;
+    height: 50%;
   }
   #carouselExampleFade {
-    width: 90%;
-    height: 100%;
-  }
-  #carousel1 {
-    grid-area: carousel1;
-  }
-  #carousel2 {
-    grid-area: carousel2;
-  }
-  #galeriaContainer {
-    display: grid;
-    grid-template-areas: "carousel1 carousel2";
-    grid-template-columns: 49% 49%;
-    grid-template-rows: 100%;
+    width: 70%;
+    height: 50%;
   }
   .presentacionContainer {
     font-size: 1.7rem;
