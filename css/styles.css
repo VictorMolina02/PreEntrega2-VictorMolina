@@ -14,7 +14,7 @@
 .txtContainer {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -35,20 +35,24 @@
   margin-bottom: 1rem;
 }
 
-.imgIndex {
-  display: none;
+.modulo1 img {
+  width: 100%;
+}
+
+.modulo2 img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   .txtContainer {
     flex-direction: row;
-    font-size: 1rem;
     margin-top: 2rem;
     width: 100%;
   }
   .txtContainer p {
     margin-left: 1rem;
     width: 10rem;
+    font-size: 1.9rem;
   }
   .txtContainer img {
     width: 1rem;
@@ -60,15 +64,31 @@
   .logrosContainer {
     font-size: 1.7rem;
   }
+  .logrosContainer .modulo1 {
+    display: flex;
+    align-items: center;
+  }
+  .logrosContainer .modulo1 p {
+    font-size: 1.9rem;
+    margin-left: 1rem;
+  }
+  .logrosContainer .modulo2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .logrosContainer .modulo2 p {
+    font-size: 1.9rem;
+    margin-right: 1rem;
+  }
   .logrosContainer h3 {
     text-align: center;
     margin-top: 2rem;
     font-size: 2.5rem;
   }
-  .imgIndex {
-    display: initial;
-    width: 100%;
-    height: 95rem;
+  .logrosContainer img {
+    width: 100rem;
+    height: 50rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -141,14 +161,14 @@
 
 @media screen and (min-width: 1024px) {
   .festivalContainer {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .festivalContainer h2 {
-    font-size: 2.7rem;
+    font-size: 1.9rem;
     text-align: center;
   }
   #organizacion-festivales {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   #festival-zamba {
     display: grid;
@@ -172,6 +192,7 @@
     grid-template-areas: "foto texto";
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    align-items: center;
   }
   #festival-malambo img {
     width: 100%;
@@ -201,13 +222,13 @@
 }
 @media screen and (min-width: 768px) {
   .festivalContainer {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   .festivalContainer h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
   #organizacion-festivales {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 #carouselFade {
@@ -227,7 +248,7 @@
 }
 
 .presentacionContainer {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -243,8 +264,10 @@
     height: 50%;
   }
   .presentacionContainer {
-    font-size: 1.7rem;
     margin-top: 1rem;
+  }
+  .presentacionContainer p {
+    font-size: 2.7rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -290,23 +313,23 @@
   }
   #texto-salon {
     width: 50%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   #texto-salon h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
   #texto-pericon {
     width: 50%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   #texto-pericon h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
   .videoContainer {
     width: 50%;
   }
   .titulo-coreografias {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -314,20 +337,19 @@
     font-size: 2.7rem;
   }
   #texto-salon {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   #texto-salon h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
   #texto-pericon {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   #texto-pericon h2 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 }
 form div {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
@@ -341,6 +363,7 @@ form div label {
 }
 
 .formH1 {
+  font-size: 2.7rem;
   text-align: center;
   margin-top: 2rem;
 }

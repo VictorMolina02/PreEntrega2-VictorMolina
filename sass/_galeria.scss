@@ -1,3 +1,13 @@
+$fontH1: 2.7rem;
+$fontH2: 1.9rem;
+$fontH3: 2.5rem;
+$fontTexto: 1.7rem;
+
+$fontH1mobile: 2.5rem;
+$fontH2mobile: 1.7rem;
+$fontH3mobile: 2.5rem;
+$fontTextomobile: 1.4rem;
+
 #carouselFade{
     margin-top: 2rem;
     width: 80%;
@@ -15,7 +25,7 @@
 }
 
 .presentacionContainer{
-    font-size: 1.3rem;
+    font-size: $fontTextomobile;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -31,14 +41,16 @@
         height: 50%;
     }
     .presentacionContainer{
-        font-size: 1.7rem;
+        p{
+            font-size: $fontH1;
+        }
         margin-top: 1rem;
     }
 }
 
 @media screen and (min-width:768px){
     .presentacionContainer{
-        font-size: 1.9rem;
+        font-size: $fontH2;
     }
     main{
         overflow-y: hidden;

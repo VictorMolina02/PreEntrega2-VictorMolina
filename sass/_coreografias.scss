@@ -1,3 +1,13 @@
+$fontH1: 2.7rem;
+$fontH2: 1.9rem;
+$fontH3: 2.5rem;
+$fontTexto: 1.7rem;
+
+$fontH1mobile: 2.5rem;
+$fontH2mobile: 1.7rem;
+$fontH3mobile: 2.5rem;
+$fontTextomobile: 1.4rem;
+
 .titulo-coreografias{
     text-align: center;
     margin-top: 0.5rem;
@@ -34,17 +44,17 @@
 
     #texto-salon{
         width: 50%;
-        font-size: 1.9rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.5rem;
+            font-size: $fontH2;
         }
     }
 
     #texto-pericon{
         width: 50%;
-        font-size: 1.9rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.5rem;
+            font-size: $fontH2;
         }
     }
 
@@ -53,24 +63,24 @@
     }
 
     .titulo-coreografias{
-        font-size: 3rem;
+        font-size: $fontH1;
     }
 }
 
 @media screen and (min-width:768px){
     .titulo-coreografias{
-        font-size: 2.7rem;
+        font-size: $fontH1;
     }
     #texto-salon{
-        font-size: 2rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.5rem;
+            font-size: $fontH2;
         }
     }
     #texto-pericon{
-        font-size: 2rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.5rem;
+            font-size: $fontH2;
         }
     }
 }

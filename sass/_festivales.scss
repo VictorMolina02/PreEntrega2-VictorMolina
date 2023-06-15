@@ -1,3 +1,13 @@
+$fontH1: 2.7rem;
+$fontH2: 1.9rem;
+$fontH3: 2.5rem;
+$fontTexto: 1.7rem;
+
+$fontH1mobile: 2.5rem;
+$fontH2mobile: 1.7rem;
+$fontH3mobile: 2.5rem;
+$fontTextomobile: 1.4rem;
+
 .fecha-zamba{
     font-weight: bolder;
 }
@@ -40,14 +50,14 @@
 
 @media screen and (min-width:1024px){
     .festivalContainer{
-        font-size: 2rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.7rem;
+            font-size: $fontH2;
             text-align: center;
         }
     }
     #organizacion-festivales{
-        font-size: 3rem;
+        font-size: $fontH1;
     }
     #festival-zamba{
         display: grid;
@@ -78,6 +88,7 @@
             height: 90%;
             grid-area: foto;
         }
+        align-items: center;
     }
     .txtyimgfnmContainer{
         grid-area: texto;
@@ -105,12 +116,12 @@
 
 @media screen and (min-width:768px){
     .festivalContainer{
-        font-size: 1.9rem;
+        font-size: $fontTexto;
         h2{
-            font-size: 2.5rem;
+            font-size: $fontH2;
         }
     }
     #organizacion-festivales{
-        font-size: 3rem;
+        font-size: $fontH1;
     }
 }
