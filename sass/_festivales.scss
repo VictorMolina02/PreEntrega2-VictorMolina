@@ -48,6 +48,10 @@ $fontTextomobile: 1.4rem;
     }
 }
 
+main{
+    overflow-x: hidden;
+}
+
 @media screen and (min-width:1024px){
     .festivalContainer{
         font-size: $fontTexto;

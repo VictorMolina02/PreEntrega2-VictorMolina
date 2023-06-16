@@ -35,10 +35,18 @@
   margin-bottom: 1rem;
 }
 
+.modulo1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .modulo1 img {
   width: 100%;
 }
 
+.modulo2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .modulo2 img {
   width: 100%;
 }
@@ -159,6 +167,10 @@
   height: 100%;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 1024px) {
   .festivalContainer {
     font-size: 1.7rem;
@@ -252,6 +264,10 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 1024px) {
@@ -381,6 +397,10 @@ form div label {
 }
 .buttons button {
   border-radius: 10rem;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 button {

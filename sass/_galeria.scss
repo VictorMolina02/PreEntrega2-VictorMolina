@@ -31,6 +31,9 @@ $fontTextomobile: 1.4rem;
     margin-right: 1rem;
 }
 
+main{
+    overflow-x: hidden;
+}
 @media screen and (min-width:1024px){
     #carouselFade{
         width: 70%;
